@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Arquitetura no Agronegócio</title>
+</head>
+<body>
+<header>
+    <div class="header-conteudo">
+        <div class="header-topo">
+            <img src="img/logo_escola.png" alt="Logo da Escola" height="150px"/>
+            <div class="titulo-texto">
+                <h1>Curso Técnico em Agronegócio</h1>
+                <h6>E.E.E.M. Gastão Bragatti Lepage</h6>
+            </div>
+        </div>
+        <nav class="navegacao">
+            <ul>
+                <li><button class="menu-btn" onclick="mostrarSecao('inicio')">Página Inicial</button></li>
+                <li><button class="menu-btn" onclick="mostrarSecao('projetos')">Projetos</button></li>
+                <li><button class="menu-btn" onclick="mostrarSecao('autocad')">Sobre o AutoCAD</button></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- SEÇÃO 1: INÍCIO -->
+<section id="inicio" class="secao ativa conteudo-principal">
+    <div class="texto-esquerdo">
+        <h2>Qual a Importância da Arquitetura no Agronegócio?</h2>
+        <p>
+            A arquitetura no meio rural e no agronegócio desempenha um papel estratégico ao integrar funcionalidade, sustentabilidade e produtividade. Ela é essencial para o planejamento de instalações agroindustriais, como galpões, silos, estábulos, estufas e áreas de beneficiamento, visando otimizar fluxos de trabalho e reduzir desperdícios.
+            Além disso, uma boa arquitetura rural garante melhores condições de conforto térmico e sanitário para os trabalhadores e animais, o que influencia diretamente na saúde e produtividade. Também permite a correta ventilação, iluminação e circulação, o que evita perdas de produção e melhora a qualidade dos produtos armazenados ou processados.
+            Outro ponto importante é a adoção de práticas sustentáveis, como o uso racional da água, aproveitamento da luz natural e escolha de materiais adequados ao clima e ao tipo de cultura. Assim, a arquitetura rural deixa de ser apenas uma questão estética e passa a ser um instrumento de gestão eficiente, contribuindo para o crescimento e competitividade do agronegócio.
+        </p>
+    </div>
+    <div class="imagem-direita">
+        <img src="img/fazenda.jpg" alt="Imagem de arquitetura rural">
+    </div>
+</section>
+
+<!-- SEÇÃO 2: PROJETOS -->
+<section id="projetos" class="secao">
+    <div class="projetos-container">
+        <div class="projeto-item"><img src="img/planta-baixa.jpg"><p>Planta Baixa</p></div>
+        <div class="projeto-item"><img src="img/corte-a.jpg"><p>Corte A</p></div>
+        <div class="projeto-item"><img src="img/corte-b.jpg"><p>Corte B</p></div>
+        <div class="projeto-item"><img src="img/corte-c.jpg"><p>Corte C</p></div>
+        <div class="projeto-item"><img src="img/fachada-1.jpg"><p>Fachada 01</p></div>
+        <div class="projeto-item"><img src="img/fachada-2.jpg"><p>Fachada 02</p></div>
+        <div class="projeto-item"><img src="img/hidraulica.jpg"><p>Planta Hidráulica</p></div>
+        <div class="projeto-item"><img src="img/esgoto.png"><p>Planta Sanitária</p></div>
+    </div>
+</section>
+
+<!-- SEÇÃO 3: AUTOCAD -->
+<section id="autocad" class="secao">
+    <div class="autocad-cabecalho">
+        <img src="img/Autocad Logo [Autodesk] - PNG Logo Vector Brand Downloads (SVG, EPS).jpg" alt="Logo AutoCAD" class="autocad-logo">
+        <h2>AutoCAD</h2>
+    </div>
+    <div class="autocad-interface">
+        <img src="img/interface.png" alt="Interface do AutoCAD">
+    </div>
+    
+    <div class="autocad-funcao">
+        <img src="img/camadas.png" alt="Ferramenta Camadas">
+        <p><strong>Camadas:</strong> organizam o projeto por categorias. Exemplo: tipo de linha, cores e espessura dos traços.</p>
+    </div>
+    <div class="autocad-funcao">
+        <img src="img/linha.png" alt="Ferramenta Linha">
+        <p><strong>Linha:</strong> usada para desenhar elementos retos, como paredes ou eixos.</p>
+    </div>
+    <div class="autocad-funcao">
+        <img src="img/cota.png" alt="Ferramenta Cota">
+        <p><strong>Cota:</strong> permite inserir medidas nos desenhos para garantir escala e precisão.</p>
+    </div>
+    
+    <div class="autocad-funcao">
+        <img src="img/retangulo.png" alt="Ferramenta Retângulo">
+        <p><strong>Retângulo:</strong> usado para desenhar formas básicas com precisão de largura e altura.</p>
+    </div>
+    <div class="autocad-funcao">
+        <img src="img/copia_paralela.png" alt="Ferramenta de Cópia Paralela">
+        <p><strong>Cópia Paralela:</strong> facilita na criação de paredes, podendo "duplicar" as linhas já com uma medida específica entre elas.</p>
+    </div>
+</section>
+
+<!-- RODAPÉ -->
+<footer>
+    <div class="rodape-conteudo">
+        <p class="autor">Vitória Menezes Regert - Turma 312</p>
+        <div class="estagio">
+            <a href="https://www.instagram.com/arq.nicolemundstock?igsh=MXMwdTZmMncydGtiOQ==" target="_blank">
+                <img src="/img/image.png" alt="Instagram da empresa" class="instagram-icon">
+            </a>
+            <p>Local de Estágio: Nicole Mundstock Arquitetura</p>
+        </div>
+    </div>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+function mostrarSecao(id) {
+    document.querySelectorAll('.secao').forEach(secao => {
+        secao.classList.remove('ativa');
+    });
+    document.getElementById(id).classList.add('ativa');
+}
+</script>
+
+</body>
+</html>
